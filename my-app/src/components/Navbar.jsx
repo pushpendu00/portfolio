@@ -10,8 +10,8 @@ export const Navbar = () => {
         <ul className='nav-list w-0 overflow-hidden md:w-auto md:flex gap-7'>
             <a href='#Home' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Home</a>
             <a href='#About' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>About</a>
-            <a href='#Skill' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Skills</a>
-            <a href='#Skill' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Work</a>
+            <a href='#Skills' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Skills</a>
+            <a href='#Work' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Work</a>
             <a href='#Projects' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Projects</a>
             <a href='#Education' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Education</a>
             <a href='#Contact' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Contact</a>
