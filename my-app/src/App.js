@@ -1,6 +1,7 @@
 import { About } from "./components/About";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
+import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Work } from "./components/Work";
 import './index.css';
@@ -29,6 +30,11 @@ function App() {
         {/* Work Section */}
         <div id="Work" className="w-full pt-10 p-[10px]">
           <Work />
+        </div>
+
+        {/* Projects Section */}
+        <div id="Projects" className="w-full pt-10 p-[10px]">
+          <Projects />
         </div>
 
       </main>

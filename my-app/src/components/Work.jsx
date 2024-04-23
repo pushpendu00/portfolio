@@ -11,7 +11,7 @@ export const Work = () => {
         </h1>
 
         {/* body of work*/}
-        <div className='w-full pt-10 p-3 flex flex-col justify-center'>
+        <div className='w-full pt-10 p-3 flex flex-col items-center'>
             <div className='w-[95%] md:w-[90%] border-b-[0.7px] border-[#626262]'></div>
 
             {/* 1st Experence */}
@@ -26,10 +26,10 @@ export const Work = () => {
                         Member, Full Stack Developer
                     </h1>
                     <p className='text-[#b6b6b6]'>
-                        <span>Self-employed</span> <br />
+                        {/* <span>Self-employed</span> <br /> */}
                         <span>Dana . Part-time</span> <br />
-                        <span>2022 - Present . 1 yrs 6 mos</span> <br />
-                        <span>Kalyani, West Bengal, India</span> <br /><br />s
+                        <span>2023 - Present . 8 mos</span> <br />
+                        <span>Kalyani, West Bengal, India</span> <br /><br />
                         <span>This website is created by me and I am still its developer. </span> <br />
                         <span> Working with <u className='font-bold'>React js</u>, <u className='font-bold'>Node js</u>, <u className='font-bold'>Express js</u>, <u className='font-bold'>MongoDB</u>, <u className='font-bold'>CSS</u>, <u className='font-bold'>Tailwind css</u></span>
                     </p>
