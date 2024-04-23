@@ -29,7 +29,7 @@ export const Work = () => {
                         <span>Self-employed</span> <br />
                         <span>Dana . Part-time</span> <br />
                         <span>2022 - Present . 1 yrs 6 mos</span> <br />
-                        <span>kalyani, west Bengal, India</span> <br /><br />
+                        <span>Kalyani, West Bengal, India</span> <br /><br />s
                         <span>This website is created by me and I am still its developer. </span> <br />
                         <span> Working with <u className='font-bold'>React js</u>, <u className='font-bold'>Node js</u>, <u className='font-bold'>Express js</u>, <u className='font-bold'>MongoDB</u>, <u className='font-bold'>CSS</u>, <u className='font-bold'>Tailwind css</u></span>
                     </p>
