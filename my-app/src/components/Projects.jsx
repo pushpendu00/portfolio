@@ -36,7 +36,7 @@ export const Projects = () => {
                                 Like and Play any song.
                             </p>
                         </div> <br />
-                        <ButtonLiveDemoCode live={'#'} 
+                        <ButtonLiveDemoCode live={'https://4ypg4s-3000.csb.app'} 
                                             demo={'#'} 
                                             code={'https://github.com/pushpendu00/Spotify_Clone'}
                                             />
