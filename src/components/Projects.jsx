@@ -36,8 +36,15 @@ export const Projects = () => {
                                 Like and Play any song.
                             </p>
                         </div> <br />
+                        <div className='flex'>
+                            <span className='font-bold'>&#8226;&emsp;</span>
+                            <p>
+                                Using skills  : -  React js, Node js, Express js, MongoDB, Tailwind css, API.
+                            </p>
+                        </div>
+                        <br />
                         <ButtonLiveDemoCode live={'https://4ypg4s-3000.csb.app'} 
-                                            demo={'#'} 
+                                            demo={'https://youtu.be/V1FeZ6g-bJM?si=qufIKGF7f9fLJ8ZU'} 
                                             code={'https://github.com/pushpendu00/Spotify_Clone'}
                                             />
                     </div>
@@ -80,9 +87,16 @@ export const Projects = () => {
                                 delivery.
                             </p>
                         </div> <br />
+                        <div className='flex'>
+                            <span className='font-bold'>&#8226;&emsp;</span>
+                            <p>
+                                Using skills  : -  React js, Node js, Express js, MongoDB, Tailwind css, API, payment integrate (Rozor pay).
+                            </p>
+                        </div>
+                        <br />
 
                         <ButtonLiveDemoCode live={'https://k9tjt9-3000.csb.app/'} 
-                                            demo={'#'} 
+                                            demo={'https://youtu.be/qTwU7XDQACE?si=Tz0BPdUGX5CavYBY'} 
                                             code={'https://github.com/pushpendu00/pizza_delivery_app'}
                         />
 
