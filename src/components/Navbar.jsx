@@ -6,7 +6,7 @@ export const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div className='nav-div h-full p-2 flex justify-between items-center bg-[#2a2a2a] text-white shadow-md shadow-[#7a7a7a]'>
-        <div className='nav-profile-name bg-green-500 text-4xl font-bold from-[#4cff8f] via-[#ff6b19] to-[#f065f4] bg-gradient-to-r bg-clip-text text-transparent'>Pushpend</div>
+        <div className='nav-profile-name bg-green-500 text-4xl font-bold from-[#4cff8f] via-[#ff6b19] to-[#f065f4] bg-gradient-to-r bg-clip-text text-transparent'>Pushpendu</div>
         <ul className='nav-list w-0 overflow-hidden md:w-auto md:flex gap-7'>
             <a href='#Home' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>Home</a>
             <a href='#About' className='cursor-pointer hover:border-b-red-500 border-b-[3px] border-transparent'>About</a>
