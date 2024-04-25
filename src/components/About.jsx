@@ -13,10 +13,10 @@ export const About = () => {
       </h1>
 
       <div className='about-content w-full flex flex-col md:flex-row items-center justify-center'>
-        <div className='w-[50%] md:w-[40%] lg:w-[20%] p-3 md:flex md:justify-end'>
-          <img className='w-[100%]' src="https://pics.craiyon.com/2023-10-26/5e86e55df03c4bbdbbdaa6a261c4a0d6.webp" alt="" />
+        <div className='w-[50%] md:w-[30%] lg:w-[20%] p-3 md:flex md:justify-end'>
+          <img className='w-[100%]' src="https://pics.craiyon.com/2023-10-26/5e86e55df03c4bbdbbdaa6a261c4a0d6.webp" alt="about_photo" />
         </div>
-        <div className='w-[80%] md:w-[60%] lg:w-[70%] p-3'>
+        <div className='w-[80%] md:w-[50%] lg:w-[60%] p-3'>
           <p className='p-2 w-full text-xl text-justify justify-center font-semibold'>
             &emsp;Aspiring full stack web developer Looking
             for a challenging role in a reputable

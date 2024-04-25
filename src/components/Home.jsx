@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 export const Home = () => {
   return (
     <div className='px-5 py-[50px] w-full flex flex-col items-center gap-5 md:flex-row md:justify-around'>
-        <div className='w-full md:w-[35%] font-bold text-white'>
+        <div className='w-full md:w-[45%] font-bold text-white'>
             <span className='text-[19px] md:text-2xl flex flex-col items-center'>
                 <span className='text-2xl text-[rgb(170,198,255)]'>Hi, I am <br /></span>
                 <span className='text-4xl from-[#4cff8f]  to-[#f065f4] bg-gradient-to-r bg-clip-text text-transparent'>Pushpendu Jana <br /></span>
@@ -43,8 +43,8 @@ export const Home = () => {
                 </a>
             </div>
         </div>
-        <div className='w-[70%] md:w-[50%] rounded-full flex items-center justify-center'>
-            <img src={profile} className='w-2/3 rounded-full md:rounded-lg' alt="profile" />
+        <div className='w-full md:w-[45%] rounded-full flex items-center justify-center'>
+            <img src={profile} className='w-[50%] rounded-full md:rounded-lg' alt="profile" />
         </div>
     </div>
   )
