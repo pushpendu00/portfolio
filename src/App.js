@@ -1,4 +1,5 @@
 import { About } from "./components/About";
+import { Contact } from "./components/Contact";
 import { Education } from "./components/Education";
 import { Footer } from "./components/Footer";
 import { Home } from "./components/Home";
@@ -39,9 +40,14 @@ function App() {
           <Projects />
         </div>
 
-          {/* Educations Section */}
-          <div id="Education" className="w-full pt-10 p-[10px]">
+        {/* Educations Section */}
+        <div id="Education" className="w-full pt-10 p-[10px]">
           <Education />
+        </div>
+
+        {/* Contact Section */}
+        <div id="Contact" className="w-full pt-10 p-[10px] pb-14">
+          <Contact />
         </div>
 
         {/* Footer Section */}

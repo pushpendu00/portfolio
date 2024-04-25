@@ -5,7 +5,7 @@ import dana_logo from '../assets/images/logo-final.png';
 export const Work = () => {
   return (
     <div className='work-div'>
-        <h1 className='flex justify-center gap-5'>
+        <h1 className='flex justify-center items-center gap-5'>
             <Icon icon="raphael:employee" width="40" height="40"  style={{color: '#f674ff'}} />
             <span className='text-4xl font-bold from-[#f674ff] to-[#ff6b19] bg-gradient-to-r bg-clip-text text-transparent'>Work</span>
         </h1>

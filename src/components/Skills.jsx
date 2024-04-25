@@ -4,7 +4,7 @@ import React from 'react'
 export const Skills = () => {
   return (
     <div className='w-full flex flex-col items-center'>
-        <h1 className='w-full flex justify-center gap-5 pb-5'>
+        <h1 className='w-full flex justify-center items-center gap-5 pb-5'>
             <Icon icon="game-icons:skills" width="40" height="40"  style={{color: '#f674ff'}} />
             <div className='text-4xl font-bold from-[#f674ff] to-[#ff6b19] bg-gradient-to-r bg-clip-text text-transparent'>Skills</div>
         </h1>
