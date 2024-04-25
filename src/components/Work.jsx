@@ -16,11 +16,11 @@ export const Work = () => {
 
             {/* 1st Experence */}
             <div className='w-[95%] md:w-[90%] py-5 flex gap-3 md:gap-10   border-b-[0.7px] border-[#626262]'>
-                <div className='h-full '>
-                    <img className='w-[80px] bg-white' src={dana_logo} alt="Dana" />
+                <div className='w-[25%]'>
+                    <img className='w-full bg-white' src={dana_logo} alt="Dana" />
                     {/* <span>Self Employed</span> */}
                 </div>
-                <div>
+                <div className='w-full'>
                     <h1 className='text-xl font-bold text-white'>
                         {/* Full Stack Web Developer */}
                         Member, Full Stack Developer
@@ -31,7 +31,8 @@ export const Work = () => {
                         <span>2023 - Present . 8 mos</span> <br />
                         <span>Kalyani, West Bengal, India</span> <br /><br />
                         <span>This website is created by me and I am still its developer. </span> <br />
-                        <span> Working with <u className='font-bold'>React js</u>, <u className='font-bold'>Node js</u>, <u className='font-bold'>Express js</u>, <u className='font-bold'>MongoDB</u>, <u className='font-bold'>CSS</u>, <u className='font-bold'>Tailwind css</u></span>
+                        <span> Working with <u className='font-bold'>React js</u>, <u className='font-bold'>Node js</u>, <u className='font-bold'>Express js</u>, <u className='font-bold'>MongoDB</u>, <u className='font-bold'>CSS</u>, <u className='font-bold'>Tailwind css</u></span> <br />
+                        <a className='text-blue-500 underline' href="http://dana.org.in"><span>http://dana.org.in</span></a>
                     </p>
                 </div>
             </div>
