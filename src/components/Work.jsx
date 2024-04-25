@@ -16,7 +16,7 @@ export const Work = () => {
 
             {/* 1st Experence */}
             <div className='w-[95%] md:w-[90%] py-5 flex gap-3 md:gap-10   border-b-[0.7px] border-[#626262]'>
-                <div className='w-[25%]'>
+                <div className='w-[25%] md:w-[20%] lg:w-[10%]'>
                     <img className='w-full bg-white' src={dana_logo} alt="Dana" />
                     {/* <span>Self Employed</span> */}
                 </div>
