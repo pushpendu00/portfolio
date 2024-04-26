@@ -78,8 +78,8 @@ export const Contact = () => {
 
 
       <ToastContainer
-        position="bottom-center"
-        autoClose={2000}
+        position="top-center"
+        autoClose={3000}
         // hideProgressBar={false}
         // newestOnTop={false}
         // closeOnClick
