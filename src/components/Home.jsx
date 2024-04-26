@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import profile from '../assets/images/profile-pushpendu.jpg';
+import profile from '../assets/images/profile-pushpendu-removebg.png';
 import { Icon } from '@iconify/react/dist/iconify.js';
 
 export const Home = () => {
@@ -44,7 +44,7 @@ export const Home = () => {
             </div>
         </div>
         <div className='w-full md:w-[45%] rounded-full flex items-center justify-center'>
-            <img src={profile} className='w-[50%] rounded-full md:rounded-lg' alt="profile" />
+            <img src={profile} className='w-[70%] rounded-full md:rounded-lg' alt="profile" />
         </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import React from 'react'
-import dana_logo from '../assets/images/logo-final.png';
+import dana_logo from '../assets/images/dana_logo.png';
 
 export const Work = () => {
   return (
