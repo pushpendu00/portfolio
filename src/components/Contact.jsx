@@ -64,14 +64,14 @@ export const Contact = () => {
               <textarea value={message} onChange={(e)=>setMessage(e.target.value)} className='p-2 rounded-md resize-none outline-none bg-[#4b4b4b]' name="" id="" cols="30" rows="5" placeholder='Text Here !' required></textarea>
               {isLodar?(
                 <>
-                  <div className='h-12 mt-7 rounded-md text-2xl font-semibold bg-blue-600 flex items-center justify-center'>
+                  <div className='w-28 h-12 mt-7 rounded-md text-2xl font-semibold bg-blue-600 flex items-center justify-center'>
                     <BeatLoader color="white" loading={isLodar} />
                   </div>
                 </>
               ):(
-                <>
-                  <button className='h-12 mt-7 bg-blue-500 rounded-md text-2xl font-semibold hover:bg-blue-600' type='submit'>Send</button>
-                </>
+                <div className='w-full flex justify-center'>
+                  <button className='w-28 h-12 mt-7 bg-blue-500 rounded-md text-2xl font-semibold hover:bg-blue-600' type='submit'>Send</button>
+                </div>
               )}
           </form>
       </div>
