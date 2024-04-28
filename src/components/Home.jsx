@@ -53,7 +53,7 @@ export const Home = (props) => {
             <div className='w-full py-5 flex items-center justify-center gap-10 '>
                 {/* {ipdetils === undefined?(<></>):(
                     <> */}
-                        {ipdetils?.follow?(
+                        {ipdetils.follow?(
                             <button onClick={()=>Handel_follow_unfollow(ipAddress,false)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>unfollow</button>
                         ):(
                             <button onClick={()=>Handel_follow_unfollow(ipAddress,true)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>Follow</button>
