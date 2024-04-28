@@ -18,7 +18,7 @@ function App() {
   // const [latitude, setLatitude] = useState('');
   // const [longitude, setLongitude] = useState('');
 
-  const [isFollow, setIsFollow] = useState(false);
+  const [ipdetils, setIpDetils] = useState({});
 
 
   const [ipAddress, setIpAddress] = useState('');
@@ -47,13 +47,17 @@ function App() {
 
   async function Handel_ip_address(ip){
     try{
-      await fetch(`${base_url}/ip/add`,{
+      const response = await fetch(`${base_url}/ip/add`,{
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
         ip
         }),
       });
+      const jsonData = await response.json();
+      // console.log(jsonData);
+      setIpDetils(jsonData.ipDetails);
+      // console.log(jsonData.ipDetails);
     }catch(err){
       return;
     }
@@ -67,7 +71,7 @@ function App() {
         
         {/* Home Section */}
         <div  id='Home'  className="Home w-full p-[10px] bg-fixed bg-[url('https://e0.pxfuel.com/wallpapers/149/259/desktop-wallpaper-web-development.jpg')] bg-cover bg-center">
-          <Home isFollow={isFollow} setIsFollow={setIsFollow} />
+          <Home ipAddress={ipAddress} ipdetils={ipdetils} setIpDetils={setIpDetils}/>
         </div>
 
         {/* Aboute Section */}

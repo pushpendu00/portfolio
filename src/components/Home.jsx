@@ -2,8 +2,30 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import profile from '../assets/images/profile-pushpendu-removebg.png';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { base_url } from '../utils/constant';
 
-export const Home = () => {
+export const Home = (props) => {
+    const {ipAddress, ipdetils, setIpDetils} = props;
+
+
+    async function Handel_follow_unfollow(ipAddress,status){
+        try{
+          const response = await fetch(`${base_url}/ip/follow-unfollow`,{
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                ipAddress,status
+            }),
+          });
+          const jsonData = await response.json();
+            // console.log(jsonData);
+            setIpDetils(jsonData.updateIp);
+        }catch(err){
+          return;
+        }
+    }
+
+
   return (
     <div className='px-5 py-[50px] w-full flex flex-col items-center gap-5 md:flex-row md:justify-around'>
         <div className='w-full md:w-[45%] font-bold text-white'>
@@ -28,10 +50,17 @@ export const Home = () => {
                         />
                     </span>
             </span>
-            {/* <div className='w-full py-5 flex items-center justify-center gap-10 '>
-                <button className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>Follow me</button>
-                <button className='px-5 py-2 text-xl rounded-md bg-[#ff9d00]'>Hiring me</button>
-            </div> */}
+            <div className='w-full py-5 flex items-center justify-center gap-10 '>
+                {ipdetils === undefined?(<></>):(
+                    <>
+                        {ipdetils.follow?(
+                            <button onClick={()=>Handel_follow_unfollow(ipAddress,false)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>unfollow</button>
+                        ):(
+                            <button onClick={()=>Handel_follow_unfollow(ipAddress,true)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>Follow</button>
+                        )}
+                    </>
+                )}
+            </div>
             <div className='py-5 w-full flex justify-center gap-6'>
                 <a href='https://github.com/pushpendu00' target='_blank' rel="noopener noreferrer">
                     <Icon icon="devicon:github" height={35} style={{background:'white'}} className='rounded-full cursor-pointer box shadow-lg  hover:shadow-[#bbbbbb] hover:scale-105' />
