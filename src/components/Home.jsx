@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import profile from '../assets/images/profile-pushpendu-removebg.png';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { base_url } from '../utils/constant';
+import { BeatLoader } from 'react-spinners';
 
 export const Home = (props) => {
     const {ipAddress, ipdetils, setIpDetils} = props;
 
+    const [isLodar, setIsLoader] = useState(false);
 
     async function Handel_follow_unfollow(ipAddress,status){
         try{
+            setIsLoader(true);
           const response = await fetch(`${base_url}/ip/follow-unfollow`,{
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -20,6 +23,7 @@ export const Home = (props) => {
           const jsonData = await response.json();
             // console.log(jsonData);
             setIpDetils(jsonData.updateIp);
+            setIsLoader(false);
         }catch(err){
           return;
         }
@@ -54,9 +58,25 @@ export const Home = (props) => {
                 {/* {ipdetils === undefined?(<></>):(
                     <> */}
                         {ipdetils.follow?(
-                            <button onClick={()=>Handel_follow_unfollow(ipAddress,false)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>unfollow</button>
-                        ):(
-                            <button onClick={()=>Handel_follow_unfollow(ipAddress,true)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>Follow</button>
+                            <>
+                                {isLodar?(
+                                    <div className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>
+                                        <BeatLoader color="white" loading={isLodar} />
+                                    </div>
+                                ):(
+                                    <button onClick={()=>Handel_follow_unfollow(ipAddress,false)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>unfollow</button>
+                                )}
+                            </>
+                            ):(
+                                <>
+                                    {isLodar?(
+                                        <div className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>
+                                            <BeatLoader color="white" loading={isLodar} />
+                                        </div>
+                                    ):(
+                                        <button onClick={()=>Handel_follow_unfollow(ipAddress,true)} className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>Follow</button>
+                                    )}
+                                </>
                         )}
                     {/* </>
                 )} */}
