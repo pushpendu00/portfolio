@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Education } from "./components/Education";
@@ -8,8 +9,57 @@ import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Work } from "./components/Work";
 import './index.css';
+import { base_url } from "./utils/constant";
+// import { IPInfoContext } from "ip-info-react";
 
 function App() {
+  // const useInfo = useContext(IPInfoContext);
+  // const [isReload, setIsReload] = useState(false);
+  // const [latitude, setLatitude] = useState('');
+  // const [longitude, setLongitude] = useState('');
+
+  const [isFollow, setIsFollow] = useState(false);
+
+
+  const [ipAddress, setIpAddress] = useState('');
+
+  useEffect(() => {
+    const fetchIPAddress = async () => {
+      try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        const jsonData = await response.json();
+        setIpAddress(jsonData.ip);
+      } catch (error) {
+        return;
+        // console.error('Error fetching IP address:', error);
+      }
+    };
+
+    fetchIPAddress();
+  }, []);
+  
+
+  useEffect(()=>{
+    if(ipAddress){
+      Handel_ip_address(ipAddress);
+    }
+  },[ipAddress]);
+
+  async function Handel_ip_address(ip){
+    try{
+      await fetch(`${base_url}/ip/add`,{
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+        ip
+        }),
+      });
+    }catch(err){
+      return;
+    }
+  }
+
+
   return (
     <div className="App h-[100vh] w-full ">
       <div className="navbar h-[10vh] w-full fixed top-0 "><Navbar /></div>
@@ -17,7 +67,7 @@ function App() {
         
         {/* Home Section */}
         <div  id='Home'  className="Home w-full p-[10px] bg-fixed bg-[url('https://e0.pxfuel.com/wallpapers/149/259/desktop-wallpaper-web-development.jpg')] bg-cover bg-center">
-          <Home />
+          <Home isFollow={isFollow} setIsFollow={setIsFollow} />
         </div>
 
         {/* Aboute Section */}

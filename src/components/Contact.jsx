@@ -20,33 +20,33 @@ export const Contact = () => {
       event.preventDefault();
       setIslodar(true);
       const fetch_data = await fetch(`${base_url}/message/add`,{
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-        name,
-        phone,
-        message,
-      }),
-    });
-    const jsonData = await fetch_data.json();
-    if(jsonData.status === 200){
-      setName('');
-      setPhone('');
-      setMessage('');
-      toast.success("Message Sucessfully Send");
-    }else{
-      toast.error("Server Down! Please Try Again");
-    }
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+          name,
+          phone,
+          message,
+        }),
+      });
+      const jsonData = await fetch_data.json();
+      if(jsonData.status === 200){
+        setName('');
+        setPhone('');
+        setMessage('');
+        toast.success("Message Sucessfully Send");
+      }else{
+        toast.error("Server Down! Please Try Again");
+      }
 
-     setIslodar(false);
-      
-    } catch (error) {
-      // console.log(error);
-      toast.error("Technical Error! Please Try Again");
       setIslodar(false);
-      // setIslodar(true);
+        
+      } catch (error) {
+        // console.log(error);
+        toast.error("Technical Error! Please Try Again");
+        setIslodar(false);
+        // setIslodar(true);
+      }
     }
-  }
 
   return (
     <>

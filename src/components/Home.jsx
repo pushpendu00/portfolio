@@ -28,6 +28,10 @@ export const Home = () => {
                         />
                     </span>
             </span>
+            {/* <div className='w-full py-5 flex items-center justify-center gap-10 '>
+                <button className='px-5 py-2 text-xl rounded-md bg-[#3b8aff]'>Follow me</button>
+                <button className='px-5 py-2 text-xl rounded-md bg-[#ff9d00]'>Hiring me</button>
+            </div> */}
             <div className='py-5 w-full flex justify-center gap-6'>
                 <a href='https://github.com/pushpendu00' target='_blank' rel="noopener noreferrer">
                     <Icon icon="devicon:github" height={35} style={{background:'white'}} className='rounded-full cursor-pointer box shadow-lg  hover:shadow-[#bbbbbb] hover:scale-105' />
