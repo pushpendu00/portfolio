@@ -91,9 +91,9 @@ export const Home = (props) => {
                 <a href='https://www.youtube.com/@PupaiJ' target='_blank' rel="noopener noreferrer">
                     <Icon icon="mdi:youtube" height={35}  style={{color: '#ff0000',background:'white'}} className='rounded-full cursor-pointer box shadow-lg hover:shadow-[#bbbbbb] hover:scale-105'/>
                 </a>
-                <a href='https://leetcode.com/pushpendu00' target='_blank' rel="noopener noreferrer">
+                {/* <a href='https://leetcode.com/pushpendu00' target='_blank' rel="noopener noreferrer">
                     <Icon icon="cib:leetcode" height={35}  style={{color: '#bd9832',background:'white'}} className='rounded-full cursor-pointer box shadow-lg hover:shadow-[#bbbbbb] hover:scale-105' />
-                </a>
+                </a> */}
             </div>
         </div>
         <div className='w-full md:w-[45%] rounded-full flex items-center justify-center'>

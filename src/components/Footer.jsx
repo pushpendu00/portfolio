@@ -35,7 +35,7 @@ export const Footer = () => {
           <ul className="flex space-x-7">
             <li><a href="https://www.linkedin.com/in/pushpendu-jana-a97a04221" target='_blank' rel="noopener noreferrer"><Icon icon="skill-icons:linkedin" width="30" height="30" /></a></li>
             <li><a href="https://github.com/pushpendu00" target='_blank' rel="noopener noreferrer"><Icon icon="skill-icons:github-light" width="30" height="30" /></a></li>
-            <li><a href="https://leetcode.com/pushpendu00" target='_blank' rel="noopener noreferrer"><Icon icon="simple-icons:leetcode" width="30" height="30"  style={{color: '#f3d439'}} /></a></li>
+            {/* <li><a href="https://leetcode.com/pushpendu00" target='_blank' rel="noopener noreferrer"><Icon icon="simple-icons:leetcode" width="30" height="30"  style={{color: '#f3d439'}} /></a></li> */}
             <li><a href="https://www.instagram.com/pupaij?igsh=MWhzMml2cW1wNGEzeg==" target='_blank' rel="noopener noreferrer"><Icon icon="skill-icons:instagram" width="30" height="30" /></a></li>
             <li><a href="https://www.youtube.com/@PupaiJ" target='_blank' rel="noopener noreferrer"><Icon icon="logos:youtube-icon" width="30" height="30" /></a></li>
             <li><a href="https://www.facebook.com/pupai.j?mibextid=kFxxJD"><Icon icon="logos:facebook" width="30" height="30" /></a></li>
